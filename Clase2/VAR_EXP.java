@@ -157,5 +157,19 @@ public class VAR_EXP {
 
         double kml_v = a*Math.pow(v_ms_prom,2 ) + b*v_ms_prom + c;
         double kmlModelo = kml_v;
+        double litrosModelo = d1 + d2 + d3/ kmlModelo;
+        System.out.println("");
+        System.out.println("********************");
+        System.out.println("");
+        System.out.println("MODELO POLINOMICO DE RENDIMIENTO:");
+        System.out.println("kmlModelo = "+kmlModelo);
+        System.out.println("litrosModelo = "+litrosModelo);
+
+        //INDICE DE EFICIENCIA
+        double w1 = 0.25;
+        double w2 = 0.25;
+        double w3 = 0.25;
+
+        double score = w1 * 1/costoPorKm + w2*kml_total + w3 * 1/CO2_por_km + w4 * 1/18;
     }
 }    
