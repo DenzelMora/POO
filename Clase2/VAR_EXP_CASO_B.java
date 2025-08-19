@@ -1,22 +1,22 @@
-public class VAR_EXP {
+public class VAR_EXP_CASO_B {
 
     public static void main(String[] args){
 
         float 
-        d1 = 42.0f, d2 = 58.5f, d3 = 37.2f,
-        t1 = 0.9f, t2 = 1.4f, t3 = 0.8f,
-        l1 = 5.1f, l2 = 6.9f, l3 = 4.3f,
-        precioLitro = 1.35f,
-        masaCargaKg = 1200f,
-        largo = 2.0f,
-        ancho = 1.2f,
-        alto = 1.1f,
-        p1 = 2.5f,
-        p2 = 3.0f,
-        p3 = 2.0f,
-        deprecPorKm = 0.08f,
-        volCamionM3 = 10.0f,
-        fCO2 = 2.68f,
+        d1 = 35.0f, d2 = 72.0f, d3 = 53.0f,
+        t1 = 0.7f, t2 = 1.6f, t3 = 1.1f,
+        l1 = 4.4f, l2 = 9.0f, l3 = 6.2f,
+        precioLitro = 1.42f,
+        masaCargaKg = 1450f,
+        largo = 2.2f,
+        ancho = 1.3f,
+        alto = 1.0f,
+        p1 = 3.2f,
+        p2 = 3.8f,
+        p3 = 2.7f,
+        deprecPorKm = 0.085f,
+        volCamionM3 = 12.0f,
+        fCO2 = 2.64f,
         galPorLitro = 0.264172f,
         vmin = 30f,
         vmax = 90f,
@@ -24,9 +24,9 @@ public class VAR_EXP {
         vb = 80f,
         ca = 0.05f,
         cb = 0.09f,
-        a = -0.0008f,
-        b = 0.08f,
-        c = 4.0f;
+        a = -0.0009f,
+        b = 0.09f,
+        c = 3.8f;
 
         //Mostrar todas las variables
         System.out.println("");
@@ -183,4 +183,4 @@ public class VAR_EXP {
         System.out.println("INDICE DE EFICIENCIA:");
         System.out.println("score = "+score);
     }
-}    
+}
