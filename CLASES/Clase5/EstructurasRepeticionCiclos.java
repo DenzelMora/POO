@@ -17,5 +17,13 @@ public class EstructurasRepeticionCiclos {
             System.out.println("Valor de j: " + j);
             j++;    
         }
+
+        // Estructura de repetición: do-while
+        System.out.println("\nEstructura de repetición: do-while");
+        int k = 1;
+        do {
+            System.out.println("Valor de k: " + k);
+            k++;
+        } while (k <= 5);
     }
 }
