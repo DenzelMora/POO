@@ -19,7 +19,7 @@ public class Biblioteca {
         System.out.println("Estado final: " + libro1);
 
         // Creacion de un segundo objeto
-        System.out.println("\n--- Añadiendo ’El señor de los anillos’ ---");
-        Libro libro2 = new Libro("El señor de los Anillos", "J.R.R. Tolken", 1954,1216 , false);
+        //System.out.println("\n--- Añadiendo ’El señor de los anillos’ ---");
+        //Libro libro2 = new Libro("El señor de los Anillos", "J.R.R. Tolken", 1954,1216 , false);
     }
 }
