@@ -1,3 +1,4 @@
+package VersionA;
 public class CuentaBancaria {
 
     //Atributos

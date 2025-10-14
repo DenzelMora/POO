@@ -1,4 +1,5 @@
-﻿public class Principal {
+﻿package VersionA;
+public class Principal {
     public static void main(String[] args){
         System.out.println("Creando cuenta 1 de banco");
         CuentaBancaria cuenta1 = new CuentaBancaria("Denzel Mora","123456",0.0);
