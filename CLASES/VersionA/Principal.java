@@ -16,7 +16,7 @@ public class Principal {
         CuentaBancaria cuenta2 = new CuentaBancaria("","12345",-10);
         System.out.println(cuenta2.toString());
 
-        cuenta2.depositar(20);
+        cuenta2.depositar(-20);
         
         cuenta1.retirar(30);
 

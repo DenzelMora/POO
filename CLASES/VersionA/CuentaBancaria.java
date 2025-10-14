@@ -60,6 +60,8 @@ public class CuentaBancaria {
     public void depositar(double monto){
         if (monto > 0){
             this.saldo += monto;
+        }else{
+            System.out.println("No se puede depositar un valor negativo");
         }
     }
 
