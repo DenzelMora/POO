@@ -6,23 +6,23 @@ public class CuentaBancaria {
     private double saldo;
 
     //Constructor por defecto
-    public CuentaBancaria() {
-        this.titular = "Sin Titular";
-        this.numeroCuenta = "000000";
-        this.saldo = 0.0;
-    }
+    //public CuentaBancaria() {
+    //    this.titular = "Sin Titular";
+    //    this.numeroCuenta = "000000";
+    //    this.saldo = 0.0;
+    //}
 
     //Constructor parametrado
     public CuentaBancaria (String titular, String numeroCuenta, double saldo){
         //Validaciones
-        if(titular == null){
-            System.out.println("EL titular no puede estar vacio");
+        if(titular == null || titular.isEmpty()){
+            System.out.println("Error el titular esta vacio");
         }
         if(numeroCuenta.length() < 6){
-            System.out.println("El numero de cuenta debe tener al menos 6 digitos.");
+            System.out.println("El numero de cuenta no cuenta con el minimo de digitos.");
         }
         if (saldo < 0){
-            System.out.println("El saldo no puede ser negativo");
+            System.out.println("Error el saldo de la cuenta es negativo");
         }
 
         this.titular = titular;
@@ -42,7 +42,7 @@ public class CuentaBancaria {
     public String getNumeroCuenta(){
         return numeroCuenta;
     }
-    public void setNUmeroCuenta(String numeroCuenta){
+    public void setNumeroCuenta(String numeroCuenta){
         this.numeroCuenta = numeroCuenta;
     }
 
@@ -71,6 +71,6 @@ public class CuentaBancaria {
 
     //M todo toString
     public String toString(){
-        return "CUENTA BANCARIA [ Titular: " + titular + "Numero De Cuenta: " + numeroCuenta + "Saldo De La Cuenta: " + saldo + " ]";
+        return "CUENTA BANCARIA [ Titular: " + titular + " || Numero De Cuenta: " + numeroCuenta + " || Saldo De La Cuenta: " + saldo + " ]";
     }
 }
