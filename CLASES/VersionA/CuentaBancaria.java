@@ -7,11 +7,11 @@ public class CuentaBancaria {
     private double saldo;
 
     //Constructor por defecto
-    //public CuentaBancaria() {
-    //    this.titular = "Sin Titular";
-    //    this.numeroCuenta = "000000";
-    //    this.saldo = 0.0;
-    //}
+    public CuentaBancaria() {
+        this.titular = "Sin Titular";
+        this.numeroCuenta = "000000";
+        this.saldo = 0.0;
+    }
 
     //Constructor parametrado
     public CuentaBancaria (String titular, String numeroCuenta, double saldo){
