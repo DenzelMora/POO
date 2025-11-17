@@ -23,30 +23,24 @@ public class ControlElevador {
     }
 
     public void solicitarAscensor(int piso) {
-        System.out.println("Solicitud desde piso " + piso);
-
+        
+        System.out.println("\nNueva solicitud desde piso " + piso);
+        
         botonesPisos[piso].presionar();
-
-        //Movemos el ascensor al piso solicitado
+        
+        // Mover ascensor al piso solicitado
         ascensor.mover(piso);
-
-        //Abrir puertas del ascensor
-        ascensor.getPuerta().abrir();;
-
-        //Cancelar iluminacion del boton
+        
+        // Abrir puertas
+        ascensor.getPuerta().abrir();
+        
+        // Cancelar iluminación del botón
         botonesPisos[piso].cancelarIluminacion();
-
-        try {
-            Thread.sleep(2000); // Tiempo para entrar/salir
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     public void seleccionarPiso(int pisoDestino) {
-        
-        System.out.println("Pasajero selecciona destino");
-        
+
+        System.out.println("\nPasajero selecciona destino");
         
         if (pisoDestino < 1 || pisoDestino > numPisos) {
             System.out.println("Piso inválido");
@@ -67,22 +61,10 @@ public class ControlElevador {
         // Cancelar iluminación
         botonesInternos[pisoDestino].cancelarIluminacion();
         
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        
         // Cerrar puertas
         ascensor.getPuerta().cerrar();
     }
 
-    public void simularObstaculo(boolean hay) {
-        ascensor.getPuerta().detectarObstaculo(hay);
-        if (hay) {
-            System.out.println("Sensor: Obstáculo detectado en las puertas");
-        }
-    }
     
     public void mostrarEstado() {
         System.out.println("\nESTADO DEL SISTEMA");

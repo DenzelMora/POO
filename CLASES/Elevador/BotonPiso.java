@@ -13,7 +13,7 @@ class BotonPiso extends Boton {
     @Override //lo que hace override es remplazar un metodo, para agregar mas cambios o funciones
     public void presionar(){
         super.presionar();
-        System.out.println("Solicitud en piso" + ubicacion + "para" + direccion);
+        System.out.println("Solicitud en piso " + ubicacion + " para " + direccion);
 
     }
 }

@@ -16,29 +16,17 @@ class Ascensor {
             System.out.println("Ya estás en el piso " + pisoActual);
             return;
         }
-
+        
         enMovimiento = true;
         direccion = (pisoDestino > pisoActual) ? "SUBIENDO" : "BAJANDO";
-
-        System.out.println("\n " + direccion + " desde piso " + pisoActual + " hacia piso " + pisoDestino);
-
-        //Esto es opcional pero lo quise agregar para que sea mas dinamico 
-        while (pisoActual != pisoDestino) {
-            try {
-                Thread.sleep(1000); // Simular tiempo de viaje
-                if (direccion.equals("SUBIENDO")) {
-                    pisoActual++;
-                } else {
-                    pisoActual--;
-                }
-                System.out.println("Pasando por piso " + pisoActual);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-            parar();
-        }
-
+        
+        System.out.println("\n" + direccion + " desde piso " + pisoActual + " hacia piso " + pisoDestino);
+        
+        // Mover directamente al destino
+        pisoActual = pisoDestino;
+        System.out.println("Llegó al piso " + pisoActual);
+        
+        parar();
     }
 
     public void parar() {

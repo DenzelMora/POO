@@ -1,12 +1,10 @@
 class Puerta {
     private boolean abierta;
-    private boolean obstaculoDetectado;
     private boolean mantenerAbierta;
 
     public Puerta (){
 
         this.abierta = false;
-        this.obstaculoDetectado = false;
         this.mantenerAbierta = false;
 
     }
@@ -17,10 +15,6 @@ class Puerta {
     }
 
     public void cerrar() {
-        if(obstaculoDetectado) {
-            System.out.println("No se pueden cerrar: obstáculo detectado");
-            return;
-        }
         if (mantenerAbierta) {
             System.out.println("Puertas mantenidas abiertas");
             return;
@@ -36,8 +30,5 @@ class Puerta {
     public boolean estaAbierta() {
         return abierta;
     }
-    public void detectarObstaculo(boolean hay) {
-        obstaculoDetectado = hay;
-    }
-    
+
 }
